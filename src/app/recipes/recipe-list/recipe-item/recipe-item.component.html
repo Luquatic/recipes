@@ -1,0 +1,9 @@
+<a class="list-group-item clearfix d-flex" [routerLink]="[index]" routerLinkActive="active" style="cursor: pointer">
+    <div class="align-content-start flex-grow-1">
+        <h4>{{ recipe.name }}</h4>
+        <p>{{recipe.description}}</p>
+    </div>
+    <span class="align-content-end">
+        <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-fluid" style="max-height: 50px">
+    </span>
+</a>
